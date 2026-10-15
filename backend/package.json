@@ -10,7 +10,9 @@
     "db:migrate": "sequelize-cli db:migrate",
     "db:seed": "node scripts/seed.js"
   },
-  "engines": { "node": ">=24 <25" },
+  "engines": {
+    "node": ">=24 <25"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
@@ -20,5 +22,12 @@
     "sequelize": "^6.37.7",
     "zod": "^4.0.0"
   },
-  "devDependencies": { "sequelize-cli": "^6.6.3" }
+  "devDependencies": {
+    "sequelize-cli": "^6.6.3"
+  },
+  "overrides": {
+    "sequelize": {
+      "uuid": "11.1.1"
+    }
+  }
 }
