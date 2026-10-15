@@ -7,6 +7,16 @@ const AppError = require("../utils/AppError");
 
 module.exports = function errorHandler(error, req, res, next) {
   if (res.headersSent) return next(error);
+  if (process.env.NODE_ENV === "development") {
+  const dbError = error.original || error.parent;
+
+  if (dbError) {
+    console.error("MYSQL ERROR:", {
+      code: dbError.code,
+      message: dbError.sqlMessage,
+    });
+  }
+}
   let problem = error;
   if (error.type === "entity.parse.failed")
     problem = new AppError(

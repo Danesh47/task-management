@@ -62,7 +62,7 @@ These grants keep local setup simple and let the same local account run migratio
 
 If the database/user already exists, use it and update its grants/password through your administrator rather than blindly repeating CREATE statements.
 
-### Option B — MySQL with Docker
+
 
 From the repository root, copy the root example:
 
@@ -78,9 +78,9 @@ cp .env.example .env
 
 Edit the root `.env` and choose real local values for `MYSQL_ROOT_PASSWORD` and `DB_PASSWORD`. Then run:
 
-```bash
-docker compose up -d --wait
-```
+
+
+
 
 This creates the `task_management` database and `taskline` user. Put the same `DB_PASSWORD` in `backend/.env` below. MySQL listens only on local port 3306. If another MySQL service uses that port, use Option A or change the Compose port mapping and backend `DB_PORT` together.
 
