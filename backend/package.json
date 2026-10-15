@@ -1,0 +1,24 @@
+{
+  "name": "taskline-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Task management API with Express, Sequelize and MySQL",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:seed": "node scripts/seed.js"
+  },
+  "engines": { "node": ">=24 <25" },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "mysql2": "^3.14.0",
+    "sequelize": "^6.37.7",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": { "sequelize-cli": "^6.6.3" }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Taskline",
+  "mode": "operate",
+  "tokens": {
+    "fontFamily": "DM Sans Variable",
+    "canvas": "#F5F7F3",
+    "surface": "#FFFFFF",
+    "ink": "#202722",
+    "rail": "#19231E",
+    "accent": "#BCE3B7",
+    "focus": "#326247",
+    "spacing": [4, 8, 12, 16, 24, 32, 48]
+  }
+}
