@@ -1,4 +1,4 @@
-const env = require('../src/config/env');
+const env = require("../src/config/env");
 
 const config = {
   username: env.DB_USER,
@@ -6,8 +6,8 @@ const config = {
   database: env.DB_NAME,
   host: env.DB_HOST,
   port: env.DB_PORT,
-  dialect: 'mysql',
-  timezone: '+00:00',
+  dialect: "mysql",
+  timezone: "+00:00",
   logging: false,
 };
 module.exports = { development: config, production: config };

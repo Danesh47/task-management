@@ -1,1 +1,1 @@
-module.exports = Object.freeze(['Pending', 'In Progress', 'Completed']);
+module.exports = Object.freeze(["Pending", "In Progress", "Completed"]);
